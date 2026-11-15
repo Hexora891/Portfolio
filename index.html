@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush XP — Software Engineer</title>
+  <meta name="description" content="Ayush's portfolio as a working Windows XP desktop in the browser.">
+  <link rel="icon" href="assets/flag.png">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript>JavaScript is required for the Windows XP desktop.</noscript>
+</head>
+<body class="crt">
+  <div id="crt"></div>
+
+  <section id="boot">
+    <img class="flag" src="assets/flag.png" alt="">
+    <div class="wordmark">
+      <span data-brand>Ayush</span><span class="xp">xp</span>
+      <span class="sub" data-title>Software Engineer</span>
+    </div>
+    <div class="boot-bar"><i></i></div>
+    <div class="boot-hint">For the best experience<br>Enter Full Screen (F11)</div>
+    <div class="boot-badge">Portfolio<span>®</span></div>
+  </section>
+
+  <section id="login" class="hidden">
+    <div class="login-bar top"></div>
+    <div class="login-body">
+      <div class="login-left">
+        <img class="flag" src="assets/flag.png" alt="">
+        <div class="wordmark">
+          <span data-brand>Ayush</span><span class="xp">xp</span>
+          <span class="sub" data-title>Software Engineer</span>
+        </div>
+        <p class="login-hint">To begin, click on <span data-name>Ayush</span> to log in</p>
+      </div>
+      <div class="login-rule"></div>
+      <div class="login-right">
+        <button class="user-tile" id="user-tile">
+          <img src="assets/Profile.jpg" alt="">
+          <span>
+            <b data-fullname>Ayush</b>
+            <small data-title>Software Engineer</small>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="login-bar bot">
+      <button class="restart-link" id="restart-link"><span class="orb"></span> Restart <span data-brand>Ayush</span> XP</button>
+      <span>After you log on, the system's yours to explore.<br>Every detail has been designed with a purpose.</span>
+    </div>
+  </section>
+
+  <main id="desktop" class="hidden">
+    <div id="icons"></div>
+    <div id="windows"></div>
+    <div id="balloon" class="hidden">
+      <button class="x" id="balloon-x">✕</button>
+      <h4>welcome</h4>
+      <p>Click an icon or open Start. Double-click on desktop, tap once on a phone.</p>
+    </div>
+  </main>
+
+  <nav id="start-menu">
+    <div class="start-head">
+      <img src="assets/Profile.jpg" alt="">
+      <span data-fullname>Ayush</span>
+    </div>
+    <div class="start-cols">
+      <div class="start-left" id="start-left"></div>
+      <div class="start-right" id="start-right"></div>
+    </div>
+    <div class="start-foot">
+      <button class="foot-btn" id="logoff-btn"><span class="foot-ico log">🔑</span> Log Off</button>
+      <button class="foot-btn" id="shutdown-btn"><span class="foot-ico off">⏻</span> Shut Down</button>
+    </div>
+  </nav>
+
+  <footer id="taskbar" class="hidden">
+    <button id="start-btn"><span class="start-flag"></span> start</button>
+    <div id="tasks"></div>
+    <div id="tray">
+      <img src="assets/about-icon.png" alt="CRT" id="tray-crt" title="CRT effect">
+      <img src="assets/icons/volume.svg" alt="Volume" id="tray-vol" title="Volume">
+      <span id="clock">12:00 PM</span>
+    </div>
+  </footer>
+
+  <div id="context-menu" class="xp-menu" hidden></div>
+
+  <section id="shutdown">
+    <h2>Windows is shutting down...</h2>
+    <p></p>
+  </section>
+
+  <script src="js/config.js"></script>
+  <script src="js/sounds.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/wm.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

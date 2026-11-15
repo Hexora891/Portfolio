@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect x="6" y="10" width="36" height="28" rx="2" fill="#111"/>
+  <rect x="6" y="10" width="36" height="5" fill="#2a2a2a"/>
+  <text x="10" y="30" font-family="Consolas,monospace" font-size="10" fill="#0f0">C:\&gt;</text>
+</svg>
